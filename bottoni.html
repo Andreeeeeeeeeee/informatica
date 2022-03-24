@@ -4,61 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicca più volte possbili in 10 secondi</title>
-<style>
-    #bigTimer{
-        font-size: 70px;
-        text-align: center;
-        color: rgb(6, 187, 0);
-    }
-    #Bottone{
-      width: 100px;
-      height: 100px;
-    }
-</style>
+    <title>4 bottoni</title>
+    <style>
+        .b1{
+            background-color: rgb(0, 255, 0);
+            width: 50px;
+            height: 50px;
+        }
+        .b2{
+            background-color: rgb(0, 47, 255);
+            width: 50px;
+            height: 50px;
+        }
+        .b3{
+            background-color: rgb(255, 0, 0);
+            width: 50px;
+            height: 50px;
+        }
+        .b4{
+            background-color: rgb(229, 255, 0);
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        function rest1(){
+            alert("1");
+        }
+        function rest2(){
+            alert("2");
+        }
+        function rest3(){
+            alert("3");
+        }
+        function rest4(){
+            alert("4");
+        }
+    </script>
 </head>
 <body>
-  <body>
-    <p>clicca più volte possibili il Bottone in 10 secondi</p>
-    <p id="bigTimer">10</p>
-<button onclick="return StartGame()" id="Bottone" >start</button>
-<p id="cps"></p>
-<p id="time"></p>
-<script>
-  let clic=0;
-  let countdown = 10;
-  let cont = 0;
-  let miotempo = 0;
-  let start=Date.now();
-  function StartGame(){
-  click(clic)
-  if (cont == 0){
-  start=Date.now();
-  setInterval(StartGame, 1000);
-  cont= cont+1;
-  setTimeout(temp,10000)
-}
-  setTimeout(temp,10000);
- } 
-}
-  function StartGame(){ 
-    if (countdown>=1){
-  countdown = countdown-1;
-  document.getElementById("bigTimer").innerHTML = countdown;
-  }
-  };
-  function click(cloc){
-    if (countdown >=-1){
-    if (countdown >0){
-    miotempo=((Date.now()-start)/1000)+"s! ";
-    document.getElementById('time').innerHTML+=miotempo;
-    clic = cloc+1;
-    return clic;
-    }
-  };
-  function temp(){
-    document.getElementById("cps").innerHTML = "Hai fatto "+clic+" click!";
-  };
-</script>
+   <button type="button" class="b1" onclick="return rest1()">1</button>
+   <button type="button" class="b2" onclick="return rest2()">2</button>
+   <button type="button" class="b3 "onclick="return rest3()">3</button>
+   <button type="button" class="b4" onclick="return rest4()">4</button>
 </body>
 </html>
