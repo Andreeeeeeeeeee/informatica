@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+#miocontainer{
+ border: 2px black solid;
+  height: 250px;
+  width: 330px;
+  margin: 20px;
+  padding:10px;
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+    <div id="input volt differenza potenziale">
+        <label for="input volt">input dei volt</label>
+         <input type="text" name="input volt" id="input1">
+        <p></p>
+         
+         <div>
+            
+         <label for="ampere intensita di corrente">ampere intensita di corrente </label>
+         <input type="text" name="ampere intensita di corrente " id="input2">
+        <p></p>
+         <button id="calcolaButton" onclick="calcola()">Calcola la resista in ohm </button>
+         <div>
+             <p id="outcarb">calcolo resistenza in ohm</p>
+         </div>
+         <p id="TOTALE"></p>
+    </div>
+<script>
+    let tot=0;
+    let input volt=0;
+    let ampere intensita di corrente=0;
+    function Converti() {
+        resistenza=  document.getElementById("input1").value;
+
+      document.getElementById("out").innerHTML=imput volt;
+     tot=input volt/div 9 ; ampere intensita di corrente
+            document.getElementById("TOT").innerHTML="Il totale è "+tot;
+            
+        }
+      
+
+</script>
+</body>
+</html>
